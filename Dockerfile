@@ -6,4 +6,4 @@ RUN echo "${TZ}" > /etc/timezone
 VOLUME /tmp
 EXPOSE 8041
 ADD ./target/ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "/ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar "]
+ENTRYPOINT ["java", "-jar", "/ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar"]
