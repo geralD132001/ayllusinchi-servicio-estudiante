@@ -5,5 +5,5 @@ RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime
 RUN echo "${TZ}" > /etc/timezone
 VOLUME /tmp
 EXPOSE 8041
-ADD ./target/ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "/ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar"]
+ADD ./target/ayllusinchi-servicio-estudiante-0.0.1-SNAPSHOT.jar servicio-estudiante.jar
+ENTRYPOINT ["java", "-jar", "/servicio-estudiante.jar"]
